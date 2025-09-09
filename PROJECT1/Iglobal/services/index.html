@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - iGlobal Opportunities</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#C52B3F',
+                        'brand-red-light': '#D84D5D',
+                        'brand-gray': '#333333'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS (for legacy compatibility) -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn active">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li><a href="../countries/australia/index.html">AUSTRALIA</a></li>
+                <li><a href="../countries/canada/index.html">CANADA</a></li>
+                <li><a href="../countries/new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="padding: 120px 0; background: linear-gradient(135deg, var(--neon-green) 0%, var(--neon-green-dim) 100%); position: relative; overflow: hidden;">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/20 to-transparent"></div>
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
+            <div class="absolute bottom-20 right-20 w-48 h-48 bg-white/10 rounded-full blur-xl"></div>
+            <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+        </div>
+        
+        <div class="container relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Main Title -->
+                <h1 id="services-title" class="font-montserrat font-black text-white mb-6" 
+                    style="font-size: clamp(3.5rem, 8vw, 6rem); line-height: 0.9; letter-spacing: -0.02em; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                    <span class="inline-block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Our</span>
+                    <span class="inline-block ml-4 bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent" 
+                          data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Services</span>
+                </h1>
+                
+                <!-- Decorative Line -->
+                <div class="flex justify-center mb-8" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                    <div class="h-1 bg-gradient-to-r from-transparent via-white to-transparent rounded-full" 
+                         style="width: clamp(150px, 30vw, 300px);"></div>
+                </div>
+                
+                <!-- Subtitle -->
+                <p class="font-montserrat font-medium text-white/95 leading-relaxed" 
+                   data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                   style="font-size: clamp(1.2rem, 3vw, 1.8rem); max-width: 600px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                    Comprehensive solutions for your <span class="font-bold text-yellow-100">international journey</span>
+                </p>
+                
+                <!-- Call to Action Button -->
+                <div class="mt-12" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
+                    <a href="#programs" class="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-montserrat font-semibold text-lg rounded-full hover:bg-white hover:text-brand-red transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                        <span>Explore Our Programs</span>
+                        <i class="fas fa-arrow-down ml-3 animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 left-8 text-white/40 text-6xl" data-aos="fade-in" data-aos-delay="1200" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-globe floating-icon"></i>
+        </div>
+        <div class="absolute bottom-1/3 right-12 text-white/40 text-5xl" data-aos="fade-in" data-aos-delay="1400" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-paper-plane floating-icon"></i>
+        </div>
+        <div class="absolute top-2/3 left-16 text-white/40 text-4xl" data-aos="fade-in" data-aos-delay="1600" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-passport floating-icon"></i>
+        </div>
+        <div class="absolute top-1/2 right-8 text-white/40 text-5xl" data-aos="fade-in" data-aos-delay="1800" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-plane floating-icon"></i>
+        </div>
+        <div class="absolute bottom-1/4 left-1/3 text-white/40 text-3xl" data-aos="fade-in" data-aos-delay="2000" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-map-marked-alt floating-icon"></i>
+        </div>
+    </section>
+
+    <!-- Services Content Section -->
+    <section id="services" class="services-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); padding: 60px 0;">
+        <div class="container">
+            <div class="services-content">
+                <div class="services-text">
+                    <h3>Professional Services Tailored to Your Needs</h3>
+                    <p>
+                        At iGlobal Opportunities, we provide comprehensive services designed to support 
+                        your international journey. From initial consultation to final documentation, 
+                        our expert team ensures every step of your process is handled with precision and care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Offered Section -->
+    <section id="programs" class="programs-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); padding: 60px 0;">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="programs-header" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="section-title">PROGRAMS OFFERED</h2>
+                <p class="section-subtitle">Be met with endless overseas opportunities with IGlobal</p>
+                <p class="section-description">
+                    IGlobal Opportunities offers a wide array of programs, including university and immigration placements, 
+                    set in different countries all over the world. This is to give you endless options and 
+                    insurmountable opportunities to achieve your lifelong dreams overseas.
+                </p>
+            </div>
+
+            <!-- Programs Grid -->
+            <div class="programs-grid">
+                <!-- Student Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Student Visa</h3>
+                        <p>Certain programs at qualified institutions are designed to allow foreign college students and recent graduates to gain exposure to culture and hands-on experience in their chosen educational and occupation practices. Such countries include Australia, New Zealand, Canada, and the United States.</p>
+                    </div>
+                </div>
+
+                <!-- Business Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Business Visa</h3>
+                        <p>Simply put, a business visa is appropriate for a variety of business-related activities overseas. This includes attending a conference, business meetings, and several other purposes, but NOT for conducting business or tasks that can be considered labor or gainful employment.</p>
+                    </div>
+                </div>
+
+                <!-- Tourist Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Tourist Visa</h3>
+                        <p>Tourist visas are nonimmigrant visas granted to persons who want to enter a certain country temporarily for business, vacation, or a combination of both. With this visa, the duration of your stay at a certain country is limited. These countries include Australia, New Zealand, United Kingdom, Spain, Canada, United States, and certain Asian and European countries.</p>
+                    </div>
+                </div>
+
+                <!-- Spousal Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Spousal Visa</h3>
+                        <p>A spousal visa (otherwise known as a marriage visa) allows the foreign spouse of a legal resident to immigrate to that resident's country. To apply for this visa, you must be legally wedded, and the spouse must complete the visa process to obtain permanent residency.</p>
+                    </div>
+                </div>
+
+                <!-- Skilled Migration -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="program-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Skilled Migration</h3>
+                        <p>If you have skills, qualifications, or experience that a certain country needs to grow, these will be assessed before you are granted a Skills Migration visa. Countries looking to hire people with specific skill sets include Australia, New Zealand, Canada.</p>
+                    </div>
+                </div>
+
+                <!-- Fiancee Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="program-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Fiancee Visa</h3>
+                        <p>A legal resident planning to marry a foreigner in the resident's country will need this visa to enter the country, get married there, and pursue permanent residency. You must get married within 90 days of your fiance's arrival in the country.</p>
+                    </div>
+                </div>
+
+                <!-- Dependent Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="program-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Dependent Visa</h3>
+                        <p>This visa enables the dependents of a person who is a citizen or permanent resident of a certain country to enter and remain within the aforementioned country. The legal resident, otherwise referred to as the sponsor, is responsible for the visa application.</p>
+                    </div>
+                </div>
+
+                <!-- Immigrant Visa -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="program-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Immigrant Visa</h3>
+                        <p>An immigrant visa is processed and issued to foreign nationals who intend to permanently move and live abroad. To apply for this, you must be generally sponsored by a citizen of your chosen country (such as a lawful permanent resident relative) or a prospective employer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- GSAP for Premium Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../script.js"></script>
+    
+    <!-- GSAP Premium Animations -->
+    <script>
+        // Register ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enhanced Title Animation with GSAP - Both words slide up
+            const titleSpans = document.querySelectorAll('#services-title span');
+            
+            // Create a timeline for the title animation
+            const titleTl = gsap.timeline({ delay: 0.5 });
+            
+            // Animate both words with the same sliding up effect
+            titleTl.fromTo(titleSpans, {
+                y: 80,
+                opacity: 0,
+                scale: 0.8
+            }, {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                stagger: 0.2
+            });
+            
+            // Add a subtle floating animation to the title
+            gsap.to('#services-title', {
+                y: -10,
+                duration: 3,
+                ease: "power2.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            
+            // Animate decorative elements with stagger
+            gsap.fromTo('.floating-icon', {
+                scale: 0,
+                rotation: 180,
+                opacity: 0
+            }, {
+                scale: 1,
+                rotation: 0,
+                opacity: 0.6,
+                duration: 1.5,
+                stagger: 0.3,
+                ease: "back.out(1.7)",
+                delay: 2
+            });
+            
+            // Enhanced floating effect for decorative icons
+            gsap.to('.floating-icon', {
+                y: -15,
+                scale: 1.1,
+                duration: 3,
+                ease: "power2.inOut",
+                yoyo: true,
+                repeat: -1,
+                stagger: 0.5,
+                delay: 3
+            });
+            
+            // Rotation animation for some icons
+            gsap.to('.floating-icon:nth-child(odd)', {
+                rotation: 360,
+                duration: 20,
+                ease: "none",
+                repeat: -1,
+                delay: 4
+            });
+            
+            // CTA Button hover effect enhancement
+            const ctaButton = document.querySelector('.page-header a[href="#programs"]');
+            if (ctaButton) {
+                ctaButton.addEventListener('mouseenter', () => {
+                    gsap.to(ctaButton.querySelector('i'), {
+                        y: 5,
+                        duration: 0.3,
+                        ease: "power2.out"
+                    });
+                });
+                
+                ctaButton.addEventListener('mouseleave', () => {
+                    gsap.to(ctaButton.querySelector('i'), {
+                        y: 0,
+                        duration: 0.3,
+                        ease: "power2.out"
+                    });
+                });
+            }
+            // Enhanced program card interactions
+            document.querySelectorAll('.program-card').forEach((card, index) => {
+                const icon = card.querySelector('.program-icon');
+                
+                // Hover animations
+                card.addEventListener('mouseenter', () => {
+                    gsap.to(card, {
+                        duration: 0.4,
+                        scale: 1.02,
+                        y: -8,
+                        ease: "power2.out"
+                    });
+                    gsap.to(icon, {
+                        duration: 0.3,
+                        scale: 1.15,
+                        rotation: 5,
+                        ease: "power2.out"
+                    });
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    gsap.to(card, {
+                        duration: 0.4,
+                        scale: 1,
+                        y: 0,
+                        ease: "power2.out"
+                    });
+                    gsap.to(icon, {
+                        duration: 0.3,
+                        scale: 1,
+                        rotation: 0,
+                        ease: "power2.out"
+                    });
+                });
+            });
+            
+            // Staggered entrance animation for programs grid
+            gsap.fromTo(".program-card", {
+                y: 60,
+                opacity: 0,
+                scale: 0.8
+            }, {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".programs-grid",
+                    start: "top 75%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+            
+            // Section title animation
+            gsap.fromTo(".section-title", {
+                y: 30,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".section-title",
+                    start: "top 80%"
+                }
+            });
+        });
+    </script>
+</body>
+</html>

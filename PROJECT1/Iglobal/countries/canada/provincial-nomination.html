@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provincial Nomination Program - Canada | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .provincial-nomination-container {
+                grid-template-columns: 1fr !important;
+                height: auto !important;
+            }
+            
+            .canada-map-left,
+            .pnp-types,
+            .canada-map-right {
+                min-height: 300px !important;
+            }
+            
+            .canada-map-left,
+            .canada-map-right {
+                order: -1;
+                min-height: 250px !important;
+            }
+            
+            .pnp-types {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .provincial-nomination-info {
+                padding: 60px 0 !important;
+            }
+            
+            .pnp-types {
+                padding: 40px 30px !important;
+            }
+            
+            .pnp-header h2 {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .provincial-nomination-info {
+                margin-top: 60px !important;
+                padding: 40px 0 !important;
+            }
+            
+            .pnp-types {
+                padding: 30px 20px !important;
+            }
+            
+            .canada-map-left,
+            .canada-map-right {
+                min-height: 200px !important;
+            }
+        }
+
+        /* Provincial Programs Responsive Design */
+        @media (max-width: 768px) {
+            .provincial-programs {
+                padding: 40px 0 !important;
+            }
+            
+            .programs-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+                gap: 20px !important;
+            }
+            
+            .program-card {
+                padding: 25px 20px !important;
+            }
+            
+            .program-card h3 {
+                font-size: 1.1rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .programs-grid {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+            
+            .program-card {
+                padding: 20px 15px !important;
+            }
+            
+            .program-card h3 {
+                font-size: 1rem !important;
+            }
+            
+            .program-card p {
+                font-size: 0.85rem !important;
+            }
+            
+            .program-card button {
+                padding: 8px 16px !important;
+                font-size: 0.75rem !important;
+            }
+        }
+        
+        /* Card hover effects */
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="../australia/skilled-migration.html" class="dropdown-featured">GENERAL SKILLED MIGRATION</a>
+                        <a href="../australia/student-visa.html">STUDENT VISA</a>
+                        <a href="../australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="../australia/family-visa.html">FAMILY VISA</a>
+                        <a href="../australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="../australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="provincial-nomination.html" class="active">PROVINCIAL NOMINATION</a>
+                        <a href="student-visas.html">STUDENT VISAS</a>
+                        <a href="tourist-visas.html">TOURIST VISAS</a>
+                        <a href="family-visas.html">FAMILY VISAS</a>
+                        <a href="investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li><a href="../new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Provincial Nomination Info Section -->
+    <section class="provincial-nomination-info" style="background: #f8fafc; padding: 80px 0; margin-top: 80px;">
+        <div class="container" style="max-width: 900px;">
+            <div style="text-align: center;">
+                <p style="font-size: 1rem; line-height: 1.7; color: #4a5568; margin-bottom: 60px;">
+                    Canada also grants Visa to Immigrants through various provincial nominee programs. The applications are assessed on applicant's ability to establish in particular province while immigrating to Canada. Each province and territory has its own streams and criteria for their PNP.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section with Full Width Layout -->
+    <section class="provincial-nomination-main" style="background: #f8fafc; padding: 0;">
+        <div class="provincial-nomination-container" style="display: grid; grid-template-columns: 1fr 2fr 1fr; height: auto; max-width: none; margin: 0;">
+            
+            <!-- Left Section: Canada Map Image -->
+            <div class="canada-map-left" style="background: url('../../assets/canada-map-left.jpg'); background-size: cover; background-position: center; min-height: 400px;">
+            </div>
+
+            <!-- Middle Section: Four Types of PNP -->
+            <div class="pnp-types" style="padding: 60px 40px; background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; display: flex; flex-direction: column; justify-content: center;">
+                <div class="pnp-header" style="text-align: center; margin-bottom: 40px; padding: 20px; background: rgba(255,255,255,0.15); border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+                    <h2 style="margin: 0; font-size: 1.4rem; font-weight: 700; letter-spacing: 2px; color: white;">FOUR TYPES OF<br>CANADIAN PROVINCIAL<br>NOMINEE PROGRAMS<br>(PNP)</h2>
+                </div>
+                
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.6;">
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        The individuals who hold a valid work permit and is recently or currently, employed in a province.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Candidates who qualify for an existing PNP program and submit an expression of Interest to the Express Entry pool. However, there are certain kinds of PNP programs which chooses the potential candidates from the Federal express entry slot on the basis of their academic qualification or skilled work experience.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        An applicant who possesses some kind of connection with the province they are applying for. For instance, it can be for someone who studied in a province or earned a job offer from an employer in the province.
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        On certain conditions, PNP program allows the candidate to sponsor a family member. However, to eligible for this, the applicant should meet some necessary requirements.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Canada Map Image -->
+            <div class="canada-map-right" style="background: url('../../assets/canada-map-right.jpg'); background-size: cover; background-position: center; min-height: 400px;">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Provincial Programs Grid Section -->
+    <section class="provincial-programs" style="background: #f8fafc; padding: 60px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="programs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                
+                <!-- Alberta AINP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">ALBERTA</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">AINP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Alberta Immigrant Nominee Program offers pathways for skilled workers, international graduates, and entrepreneurs.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- British Columbia BC PNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">BRITISH COLUMBIA</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">BC PNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">BC Provincial Nominee Program for skilled workers, healthcare professionals, and international graduates.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Manitoba MPNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">MANITOBA</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">MPNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Manitoba Provincial Nominee Program for skilled workers with job offers and international education stream.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- New Brunswick NBPNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">NEW BRUNSWICK</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">NBPNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">New Brunswick Provincial Nominee Program for skilled workers and entrepreneurs with French language priority.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Ontario OINP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">ONTARIO</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">OINP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Ontario Immigrant Nominee Program for skilled workers, international students, and French-speaking skilled workers.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Saskatchewan SINP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">SASKATCHEWAN</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">SINP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Saskatchewan Immigrant Nominee Program for in-demand occupations and international skilled workers.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Newfoundland and Labrador NLPNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px;">NEWFOUNDLAND & LABRADOR</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">NLPNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Newfoundland and Labrador Provincial Nominee Program for skilled workers and international graduates.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Nova Scotia NSNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">NOVA SCOTIA</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">NSNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Nova Scotia Nominee Program for skilled workers, international graduates, and entrepreneurs.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Prince Edward Island PEI PNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px;">PRINCE EDWARD ISLAND</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">PEI PNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Prince Edward Island Provincial Nominee Program for skilled workers and business investors.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Yukon YNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.2rem; font-weight: 700; margin-bottom: 15px;">YUKON</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">YNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Yukon Nominee Program for skilled workers with job offers and critical impact workers.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+                <!-- Northwest Territories NTNP -->
+                <div class="program-card" style="background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%); border: 2px solid rgba(197, 43, 63, 0.2); border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                    <h3 style="color: #C52B3F; font-size: 1.1rem; font-weight: 700; margin-bottom: 15px;">NORTHWEST TERRITORIES</h3>
+                    <p style="color: #C52B3F; font-weight: 600; margin-bottom: 20px;">NTNP</p>
+                    <p style="color: #2d3748; font-size: 0.9rem; line-height: 1.5; margin-bottom: 25px;">Northwest Territories Nominee Program for skilled workers and business investors with territorial connections.</p>
+                    <button style="background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.8rem;">LATEST NEWS</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Static Footer -->
+    <footer class="static-footer">
+        <div class="static-footer-container">
+            <!-- Left Section: Logo and Social -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../assets/logo.jpg" alt="iGlobal Opportunities">
+                </div>
+                <div class="social-icons-static">
+                    <a href="#" class="social-icon-static facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon-static instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-static twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Section: Contact & MARA -->
+            <div class="footer-center">
+                <div class="contact-location">
+                    <div class="location-header">PHILIPPINES</div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-phone"></i>
+                        <span>(8) 556 6248</span>
+                    </div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-envelope"></i>
+                        <span>intl.legalspecialist@yahoo.com.ph</span>
+                    </div>
+                </div>
+                
+                <div class="mara-badge-static">
+                    <div class="mara-logo-static">MARA</div>
+                    <div class="mara-info-static">
+                        <span class="mara-title-static">Migration Agents<br>Registration Authority</span>
+                        <div class="mara-number-static">1067176</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Links -->
+            <div class="footer-right">
+                <ul class="useful-links-static">
+                    <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">Canada Immigration</a></li>
+                    <li><a href="https://www.immigration.govt.nz/" target="_blank">New Zealand Immigration</a></li>
+                    <li><a href="https://immi.homeaffairs.gov.au/" target="_blank">Australia Home Affairs</a></li>
+                    <li><a href="https://www.cicnews.com/" target="_blank">CIC News</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom-static">
+            <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

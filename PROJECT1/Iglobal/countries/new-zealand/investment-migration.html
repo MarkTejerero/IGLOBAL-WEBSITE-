@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Migration - New Zealand | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .page-header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .nz-investment-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1a202c;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #e53e3e, #fc8181);
+            border-radius: 2px;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(31, 38, 135, 0.5);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .glass-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #e53e3e;
+            filter: drop-shadow(0 4px 8px rgba(229, 62, 62, 0.3));
+        }
+        
+        .glass-card h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a202c;
+        }
+        
+        .glass-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        
+        .glass-card ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .glass-card li {
+            padding: 8px 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .glass-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #e53e3e;
+            font-weight: bold;
+        }
+        
+        .glass-card li i.fas {
+            color: #e53e3e;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+        
+        .category-requirements, .category-info, .focus-details {
+            margin-top: 20px;
+        }
+        
+        .category-requirements strong, .category-info strong {
+            color: #1a202c;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .page-header p {
+                font-size: 1.1rem;
+            }
+            
+            .glass-card {
+                padding: 30px 20px;
+            }
+            
+            .glass-card i {
+                font-size: 2.5rem;
+            }
+            
+            .glass-card h4 {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="../australia/skilled-migration.html" class="dropdown-featured">GENERAL SKILLED MIGRATION</a>
+                        <a href="../australia/student-visa.html">STUDENT VISA</a>
+                        <a href="../australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="../australia/family-visa.html">FAMILY VISA</a>
+                        <a href="../australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="../australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../canada/index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="../canada/express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="../canada/skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="../canada/skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="../canada/provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="../canada/student-visas.html">STUDENT VISAS</a>
+                        <a href="../canada/tourist-visas.html">TOURIST VISAS</a>
+                        <a href="../canada/family-visas.html">FAMILY VISAS</a>
+                        <a href="../canada/investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">NEW ZEALAND</a>
+                    <div class="dropdown-content">
+                        <a href="skilled-migration.html" class="dropdown-featured">SKILLED MIGRATION</a>
+                        <a href="student-visas.html">STUDENT VISAS</a>
+                        <a href="tourist-visas.html">TOURIST VISAS</a>
+                        <a href="family-visas.html">FAMILY VISAS</a>
+                        <a href="investment-migration.html" class="active">INVESTMENT MIGRATION</a>
+                    </div>
+                </li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Investment Migration</h1>
+            <p>Residence through investment in New Zealand</p>
+        </div>
+    </section>
+
+    <!-- Investment Content -->
+    <section id="nz-investment" class="nz-investment-section">
+        <div class="container">
+            <!-- Investment Categories -->
+            <div class="investment-categories">
+                <h2 class="section-title">Investment Categories</h2>
+                <div class="grid grid-2">
+                    <div class="glass-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Active Investor Plus Category</h4>
+                        <p>For investors committing to direct and active investment in New Zealand businesses.</p>
+                        <div class="category-requirements">
+                            <strong>Key Requirements:</strong>
+                            <ul>
+                                <li>Minimum NZ$5 million investment</li>
+                                <li>Direct investment in NZ businesses</li>
+                                <li>Active involvement in investments</li>
+                                <li>English language requirements</li>
+                                <li>Spend 117 days per year in NZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-building"></i>
+                        <h4>Previous Categories (Closed)</h4>
+                        <p>Investor 1 and Investor 2 categories are now closed to new applications.</p>
+                        <div class="category-info">
+                            <strong>Status:</strong>
+                            <ul>
+                                <li>Investor 1 & 2 categories closed</li>
+                                <li>Processing existing applications</li>
+                                <li>New Active Investor Plus launched</li>
+                                <li>Focus on direct investment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="investment-benefits">
+                <h2 class="section-title">Benefits of Investment Migration</h2>
+                <div class="grid grid-3">
+                    <div class="glass-card">
+                        <i class="fas fa-passport"></i>
+                        <h4>Permanent Residence</h4>
+                        <p>Gain permanent residence in New Zealand for you and your family.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Family Inclusion</h4>
+                        <p>Include spouse/partner and dependent children in your application.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Business Opportunities</h4>
+                        <p>Access to New Zealand's business environment and Asia-Pacific markets.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education Access</h4>
+                        <p>World-class education system for your children.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-medkit"></i>
+                        <h4>Healthcare</h4>
+                        <p>Access to New Zealand's public healthcare system.</p>
+                    </div>
+                    <div class="glass-card">
+                        <i class="fas fa-flag"></i>
+                        <h4>Citizenship Path</h4>
+                        <p>Pathway to New Zealand citizenship after meeting residency requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

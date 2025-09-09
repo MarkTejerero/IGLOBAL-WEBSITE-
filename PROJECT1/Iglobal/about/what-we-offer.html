@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Offer To Do - iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Minimalist Header Styles -->
+    <style>
+        .minimalist-header {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 6rem 0 1rem;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+            min-height: auto;
+        }
+        
+        .minimalist-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #C52B3F, #D84D5D);
+            animation: slideIn 1.5s ease-out;
+        }
+        
+        .header-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .clean-title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #333333 !important;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .clean-subtitle {
+            font-size: 1.3rem;
+            color: #666666 !important;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        /* Override global page-header styles for this minimalist design */
+        .minimalist-header h1 {
+            color: #333333 !important;
+        }
+        
+        .minimalist-header p {
+            color: #666666 !important;
+        }
+        
+        .accent-line {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, #C52B3F, #D84D5D);
+            margin: 0 auto;
+            border-radius: 2px;
+            animation: expandWidth 1.2s ease-out 0.6s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes expandWidth {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80px;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .minimalist-header {
+                padding: 4rem 0 3rem;
+            }
+            
+            .clean-title {
+                font-size: 2.5rem;
+            }
+            
+            .clean-subtitle {
+                font-size: 1.2rem;
+                padding: 0 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .clean-title {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+            
+            .clean-subtitle {
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* Reduce spacing between sections */
+        .services-overview {
+            padding-top: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .services-content {
+            margin-bottom: 2rem;
+        }
+        
+        .main-services, .country-services, .process-steps, .additional-services {
+            margin-bottom: 3rem;
+        }
+        
+        /* Video Section Styles */
+        .video-section {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            transition: opacity 0.3s ease-out;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+            z-index: 1;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(197, 43, 63, 0.1) 0%, rgba(216, 77, 93, 0.1) 100%);
+            z-index: 2;
+        }
+        
+        /* Responsive video */
+        @media (max-width: 768px) {
+            .video-section {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+    <img src="../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="who-we-are.html">WHO WE ARE</a>
+                        <a href="why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="what-we-offer.html" class="dropdown-featured active">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li><a href="../services/index.html">SERVICES</a></li>
+                <li><a href="../countries/australia/index.html">AUSTRALIA</a></li>
+                <li><a href="../countries/canada/index.html">CANADA</a></li>
+                <li><a href="../countries/new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../news.html">NEWS</a></li>
+            </ul>
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Minimalist Page Header -->
+    <section class="page-header minimalist-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="clean-title">What We Offer To Do</h1>
+                <p class="clean-subtitle">Comprehensive solutions for your international journey</p>
+                <div class="accent-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section with Scroll Fade -->
+    <section class="video-section" id="videoSection">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="../assets/3773325-hd_1920_1080_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); padding: 60px 0;">
+        <div class="container">
+            <div class="services-content">
+                <div class="services-text">
+                    <h3>Professional Services Tailored to Your Needs</h3>
+                    <p>
+                        At iGlobal Opportunities, we provide comprehensive services designed to support 
+                        your international journey. From initial consultation to final documentation, 
+                        our expert team ensures every step of your process is handled with precision and care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main Services -->
+            <div class="main-services">
+                <h2 class="section-title">Our Core Services</h2>
+                <div class="grid grid-3">
+                    <div class="glass-card service-card">
+                        <div class="service-logo">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <h3>MIGRATION SERVICES</h3>
+                        <p>IGlobal is a world-class company that offers legal, immigration services, processing visa applications, ensuring that all clients are readily equipped with endless opportunities overseas.</p>
+                        <a href="../services/index.html#immigration" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="glass-card service-card">
+                        <div class="service-logo">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>PROFESSIONAL SERVICES</h3>
+                        <p>IGlobal offers legal, immigration, and professional services such as processing visa applications, ensuring 
+                            that all clients are readily equipped with endless educational and occupational opportunities overseas.</p>
+                        <a href="../services/index.html#documentation" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="glass-card service-card">
+                        <div class="service-logo">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>CONSULTATION & ADVISORY</h3>
+                        <p>Personalized consultation to assess your eligibility, explore options, and develop the best strategy for your goals.</p>
+                        <a href="../services/index.html#consultation" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country-Specific Services -->
+            <div class="country-services">
+                <h2 class="section-title">Country-Specific Expertise</h2>
+                <div class="grid grid-3">
+                    <div class="glass-card country-card">
+                        <div class="country-logo">
+                            <i class="fas fa-globe-oceania"></i>
+                        </div>
+                        <h3>Australia</h3>
+                        <h4>Services We Provide</h4>
+                        <ul class="country-services-list">
+                            <li><i class="fas fa-check"></i> Skilled Independent Visa (189)</li>
+                            <li><i class="fas fa-check"></i> Skilled Nominated Visa (190)</li>
+                            <li><i class="fas fa-check"></i> Regional Sponsored Migration (187)</li>
+                            <li><i class="fas fa-check"></i> Business Innovation Visa (188)</li>
+                            <li><i class="fas fa-check"></i> Partner/Spouse Visa</li>
+                            <li><i class="fas fa-check"></i> Student Visa (500)</li>
+                        </ul>
+                        <a href="../countries/australia/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="glass-card country-card">
+                        <div class="country-logo">
+                            <i class="fas fa-maple-leaf"></i>
+                        </div>
+                        <h3>Canada</h3>
+                        <h4>Services We Provide</h4>
+                        <ul class="country-services-list">
+                            <li><i class="fas fa-check"></i> Express Entry System</li>
+                            <li><i class="fas fa-check"></i> Provincial Nominee Program</li>
+                            <li><i class="fas fa-check"></i> Family Class Sponsorship</li>
+                            <li><i class="fas fa-check"></i> Start-up Visa Program</li>
+                            <li><i class="fas fa-check"></i> Self-employed Persons</li>
+                            <li><i class="fas fa-check"></i> Study Permits</li>
+                        </ul>
+                        <a href="../countries/canada/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="glass-card country-card">
+                        <div class="country-logo">
+                            <i class="fas fa-kiwi-bird"></i>
+                        </div>
+                        <h3>New Zealand</h3>
+                        <h4>Services We Provide</h4>
+                        <ul class="country-services-list">
+                            <li><i class="fas fa-check"></i> Skilled Migrant Category</li>
+                            <li><i class="fas fa-check"></i> Work to Residence</li>
+                            <li><i class="fas fa-check"></i> Family Category</li>
+                            <li><i class="fas fa-check"></i> Investor Category</li>
+                            <li><i class="fas fa-check"></i> Entrepreneur Category</li>
+                            <li><i class="fas fa-check"></i> Student Visa</li>
+                        </ul>
+                        <a href="../countries/new-zealand/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="process-steps">
+                <h2 class="section-title">Our Immigration Process</h2>
+                <div class="process-timeline">
+                    <!-- Progress Line -->
+                    <div class="progress-line">
+                        <div class="progress-fill"></div>
+                    </div>
+                    
+                    <div class="process-step" data-step="1">
+                        <div class="step-circle">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Initial Assessment</h3>
+                            <p>Free consultation to evaluate your eligibility and understand your immigration goals across different visa categories.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="2">
+                        <div class="step-circle">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Strategy Planning</h3>
+                            <p>Create a customized immigration roadmap with clear timelines and strategic steps to achieve your goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="3">
+                        <div class="step-circle">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Timeline Development</h3>
+                            <p>Establish realistic milestones and deadlines to keep your application process on track and efficient.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="4">
+                        <div class="step-circle">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Expression of Interest</h3>
+                            <p>Submit EOI for skill-based programs and position yourself competitively in the immigration pool.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="5">
+                        <div class="step-circle">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Visa Application</h3>
+                            <p>Complete and submit your comprehensive visa application with all required documentation.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="6">
+                        <div class="step-circle">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>State Nomination</h3>
+                            <p>Secure state or provincial nomination if required for your specific visa pathway (when applicable).</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="7">
+                        <div class="step-circle">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Travel Authorization</h3>
+                            <p>Obtain electronic travel authorization and prepare for your journey to your new destination.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="8">
+                        <div class="step-circle">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Medical & Police Clearance</h3>
+                            <p>Complete required health examinations and obtain police clearance certificates from relevant countries.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="9">
+                        <div class="step-circle">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Visa Approval</h3>
+                            <p>Receive your residence or provisional visa approval and prepare for your new life abroad.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step" data-step="10">
+                        <div class="step-circle">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Settlement Support</h3>
+                            <p>Receive ongoing guidance for your successful settlement and integration into your new country.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="additional-services">
+                <h2 class="section-title">Additional Support Services</h2>
+                <div class="grid grid-2">
+                    <div class="glass-card support-card">
+                        <div class="service-logo">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Settlement Services</h3>
+                        <p>Help with accommodation, banking, healthcare enrollment, and other essential services for your new country.</p>
+                        <a href="../services/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="glass-card support-card">
+                        <div class="service-logo">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Language Test Preparation</h3>
+                        <p>IELTS, PTE, and other English language test preparation to meet immigration requirements.</p>
+                        <a href="../services/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="glass-card support-card">
+                        <div class="service-logo">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Career Guidance</h3>
+                        <p>Professional development advice, resume writing, and job search assistance in your new country.</p>
+                        <a href="../services/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="glass-card support-card">
+                        <div class="service-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education Counseling</h3>
+                        <p>Guidance for international students on course selection, university applications, and study permits.</p>
+                        <a href="../services/index.html" class="learn-more-btn">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Static Footer -->
+    <footer class="static-footer">
+        <div class="static-footer-container">
+            <!-- Left Section: Logo and Social -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../assets/logo.jpg" alt="iGlobal Opportunities">
+                </div>
+                <div class="social-icons-static">
+                    <a href="#" class="social-icon-static facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon-static instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-static twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Section: Contact & MARA -->
+            <div class="footer-center">
+                <div class="contact-location">
+                    <div class="location-header">PHILIPPINES</div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-phone"></i>
+                        <span>(8) 556 6248</span>
+                    </div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-envelope"></i>
+                        <span>intl.legalspecialist@yahoo.com.ph</span>
+                    </div>
+                </div>
+                
+                <div class="mara-badge-static">
+                    <div class="mara-logo-static">MARA</div>
+                    <div class="mara-info-static">
+                        <span class="mara-title-static">Migration Agents<br>Registration Authority</span>
+                        <div class="mara-number-static">1067176</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Links -->
+            <div class="footer-right">
+                <ul class="useful-links-static">
+                    <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">Canada Immigration</a></li>
+                    <li><a href="https://www.immigration.govt.nz/" target="_blank">New Zealand Immigration</a></li>
+                    <li><a href="https://immi.homeaffairs.gov.au/" target="_blank">Australia Home Affairs</a></li>
+                    <li><a href="https://www.cicnews.com/" target="_blank">CIC News</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom-static">
+            <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <!-- Process Steps Animation Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Early Scroll-triggered Animations for All Sections
+        const animatedElements = [];
+        
+        function animateOnScroll() {
+            // Service cards animation - show immediately if in top part of page
+            const serviceCards = document.querySelectorAll('.service-card:not(.animated)');
+            serviceCards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                // Show immediately if visible or near the top
+                if (rect.top <= window.innerHeight * 1.1 || window.scrollY < 200) {
+                    setTimeout(() => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        card.style.transition = 'all 0.5s ease-out';
+                        card.classList.add('animated');
+                        
+                        requestAnimationFrame(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    }, index * 100);
+                }
+            });
+            
+            // Country cards animation
+            const countryCards = document.querySelectorAll('.country-card:not(.animated)');
+            countryCards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.9) {
+                    setTimeout(() => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(30px)';
+                        card.style.transition = 'all 0.6s ease-out';
+                        card.classList.add('animated');
+                        
+                        requestAnimationFrame(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    }, index * 200);
+                }
+            });
+            
+            // Support cards animation
+            const supportCards = document.querySelectorAll('.support-card:not(.animated)');
+            supportCards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.9) {
+                    setTimeout(() => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(30px)';
+                        card.style.transition = 'all 0.6s ease-out';
+                        card.classList.add('animated');
+                        
+                        requestAnimationFrame(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        });
+                    }, index * 150);
+                }
+            });
+            
+            // Section titles animation
+            const sectionTitles = document.querySelectorAll('.section-title:not(.animated)');
+            sectionTitles.forEach(title => {
+                const rect = title.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.95) {
+                    title.style.opacity = '0';
+                    title.style.transform = 'translateY(20px)';
+                    title.style.transition = 'all 0.8s ease-out';
+                    title.classList.add('animated');
+                    
+                    requestAnimationFrame(() => {
+                        title.style.opacity = '1';
+                        title.style.transform = 'translateY(0)';
+                    });
+                }
+            });
+            
+            // Services text animation - show immediately
+            const servicesText = document.querySelector('.services-text:not(.animated)');
+            if (servicesText) {
+                servicesText.style.opacity = '0';
+                servicesText.style.transform = 'translateY(15px)';
+                servicesText.style.transition = 'all 0.6s ease-out';
+                servicesText.classList.add('animated');
+                
+                setTimeout(() => {
+                    servicesText.style.opacity = '1';
+                    servicesText.style.transform = 'translateY(0)';
+                }, 200);
+            }
+        }
+        
+        // Initial check and scroll listener
+        animateOnScroll();
+        window.addEventListener('scroll', animateOnScroll);
+        
+        // Video Scroll Fade Effect
+        const videoSection = document.getElementById('videoSection');
+        
+        function handleVideoFade() {
+            if (videoSection) {
+                const rect = videoSection.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const videoHeight = rect.height;
+                
+                // Calculate fade based on how much of the video is visible
+                let opacity = 1;
+                
+                // Start fading when video starts going out of view
+                if (rect.top < 0) {
+                    const fadeStart = 0;
+                    const fadeEnd = -videoHeight * 0.5; // Fade completely when 50% scrolled out
+                    
+                    if (rect.top <= fadeStart && rect.top >= fadeEnd) {
+                        opacity = 1 - Math.abs(rect.top - fadeStart) / Math.abs(fadeEnd - fadeStart);
+                    } else if (rect.top < fadeEnd) {
+                        opacity = 0;
+                    }
+                }
+                
+                // Also fade when approaching from bottom
+                if (rect.bottom > windowHeight) {
+                    const bottomFadeStart = windowHeight;
+                    const bottomFadeEnd = windowHeight + videoHeight * 0.3;
+                    
+                    if (rect.bottom >= bottomFadeStart && rect.bottom <= bottomFadeEnd) {
+                        const bottomOpacity = 1 - (rect.bottom - bottomFadeStart) / (bottomFadeEnd - bottomFadeStart);
+                        opacity = Math.min(opacity, bottomOpacity);
+                    }
+                }
+                
+                videoSection.style.opacity = opacity;
+            }
+        }
+        
+        // Add video fade to scroll listener
+        window.addEventListener('scroll', handleVideoFade);
+        handleVideoFade(); // Initial check
+        
+        // Process Steps Animation
+        const processSteps = document.querySelectorAll('.process-step');
+        const progressFill = document.querySelector('.progress-fill');
+        let animatedSteps = [];
+
+        function animateProcessSteps() {
+            processSteps.forEach((step, index) => {
+                const rect = step.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                if (rect.top <= windowHeight * 0.95 && !animatedSteps.includes(index)) {
+                    setTimeout(() => {
+                        step.classList.add('animate');
+                        animatedSteps.push(index);
+                    }, index * 200); // Stagger animation by 200ms
+                }
+            });
+
+            // Update progress line
+            const totalSteps = processSteps.length;
+            const animatedCount = animatedSteps.length;
+            
+            // Calculate progress percentage based on actual animated steps
+            const progressPercentage = animatedCount > 0 ? ((animatedCount - 1) / (totalSteps - 1)) * 100 : 0;
+            
+            if (progressFill) {
+                progressFill.style.height = Math.min(progressPercentage, 100) + '%';
+            }
+        }
+
+        // Enhanced hover effects for process steps
+        processSteps.forEach((step, index) => {
+            step.addEventListener('mouseenter', function() {
+                const circle = this.querySelector('.step-circle');
+                const content = this.querySelector('.step-content');
+                
+                // Add pulse effect to circle
+                circle.style.animation = 'pulse 0.6s ease-in-out';
+                
+                // Add subtle glow effect
+                content.style.boxShadow = '0 20px 50px rgba(197, 43, 63, 0.2)';
+            });
+
+            step.addEventListener('mouseleave', function() {
+                const circle = this.querySelector('.step-circle');
+                const content = this.querySelector('.step-content');
+                
+                // Remove pulse effect
+                circle.style.animation = '';
+                
+                // Reset shadow
+                content.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Initial check
+        animateProcessSteps();
+
+        // Listen for scroll events
+        window.addEventListener('scroll', animateProcessSteps);
+        
+        // CSS keyframes for pulse animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.15); }
+                100% { transform: scale(1.1); }
+            }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+
+</body>
+</html>

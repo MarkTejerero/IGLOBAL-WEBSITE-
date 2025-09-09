@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor and Entrepreneur - Canada | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .hero-text {
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        .programs-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .program-section {
+            padding: 50px 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .federal-startup {
+            background: #e53e3e;
+        }
+        
+        .quebec-entrepreneur {
+            background: #2d3748;
+        }
+        
+        .provincial-nominee {
+            background: #e53e3e;
+        }
+        
+        .program-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .program-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 20px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .programs-container {
+                max-width: 100%;
+            }
+            
+            .program-section {
+                padding: 40px 20px;
+            }
+            
+            .program-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="../australia/skilled-migration.html" class="dropdown-featured">GENERAL SKILLED MIGRATION</a>
+                        <a href="../australia/student-visa.html">STUDENT VISA</a>
+                        <a href="../australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="../australia/family-visa.html">FAMILY VISA</a>
+                        <a href="../australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="../australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="student-visas.html">STUDENT VISAS</a>
+                        <a href="tourist-visas.html">TOURIST VISAS</a>
+                        <a href="family-visas.html">FAMILY VISAS</a>
+                        <a href="investor-entrepreneur.html" class="active">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li><a href="../new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Investor & Entrepreneur</h1>
+                <p>Canada welcomes entrepreneurs to start small businesses and startups in the country. Canada's entrepreneur programs aim to be mutually beneficial for both the entrepreneurs and the Canadian economy. While Canada helps the entrepreneurs grow their business, the entrepreneurs can contribute towards the growth of the Canadian economy by creating jobs for its citizens and permanent residents.</p>
+            </div>
+            
+            <div class="programs-container">
+                <div class="program-section federal-startup">
+                    <h2>FEDERAL STARTUP VISA</h2>
+                    <p>Business entrepreneurs can obtain Canadian Startup Visa and grow their companies with the funding and expertise of approved Canadian private sector organizations. In order to get a Startup Visa, the applicants need not invest any capital. But they must receive minimum venture capital or angel investment from one or multiple designated organizations.</p>
+                </div>
+                
+                <div class="program-section quebec-entrepreneur">
+                    <h2>QUEBEC ENTREPRENEUR PROGRAM</h2>
+                    <p>To be eligible to obtain a Quebec Entrepreneur Visa, the applicant must be an experienced business person or manager with an intermediate level proficiency in French. The applicant must create or acquire a business in Quebec.</p>
+                </div>
+                
+                <div class="program-section provincial-nominee">
+                    <h2>PROVINCIAL NOMINEE PROGRAMS</h2>
+                    <p>Some Canadian provinces have their own entrepreneur streams to nominate applicants for permanent residence. The candidates need to meet the eligibility requirements of the respective province and manage a business within that particular province.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

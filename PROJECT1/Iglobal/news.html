@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration News & Updates | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .news-section {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1a202c;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #e53e3e, #fc8181);
+            border-radius: 2px;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        }
+        
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(31, 38, 135, 0.5);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .glass-card i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #e53e3e;
+            filter: drop-shadow(0 4px 8px rgba(229, 62, 62, 0.3));
+        }
+        
+        .glass-card h4, .glass-card h5 {
+            color: #1a202c;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .glass-card h4 {
+            font-size: 1.4rem;
+        }
+        
+        .glass-card h5 {
+            font-size: 1.2rem;
+        }
+        
+        .glass-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .news-date {
+            background: rgba(229, 62, 62, 0.1);
+            color: #e53e3e;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid rgba(229, 62, 62, 0.2);
+        }
+        
+        .news-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: rgba(229, 62, 62, 0.1);
+            color: #e53e3e;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(229, 62, 62, 0.2);
+        }
+        
+        .news-category h3 {
+            color: #1a202c;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .news-category h3 i {
+            color: #e53e3e;
+            font-size: 1.3rem;
+        }
+        
+        .notice-item.urgent {
+            border-left: 4px solid #e53e3e;
+        }
+        
+        .notice-item.info {
+            border-left: 4px solid #3182ce;
+        }
+        
+        .notice-item i {
+            font-size: 2.5rem !important;
+        }
+        
+        .notice-date {
+            color: #e53e3e;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        
+        .newsletter-container {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .newsletter-container i {
+            font-size: 3rem !important;
+            margin-bottom: 20px;
+        }
+        
+        .newsletter-container h3 {
+            color: #1a202c;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 30px auto 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input[type="email"] {
+            width: 70%;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #1a202c;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        
+        .form-group input[type="email"]:focus {
+            outline: none;
+            border-color: #e53e3e;
+            box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+        }
+        
+        .submit-btn {
+            background: #e53e3e;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #c53030;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(229, 62, 62, 0.3);
+        }
+        
+        .submit-btn i {
+            margin-right: 8px;
+            color: white;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+        
+        .archive-month {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .archive-month i {
+            font-size: 2.5rem !important;
+            margin-bottom: 15px;
+        }
+        
+        .archive-month h5 {
+            margin-bottom: 10px;
+        }
+        
+        .view-archive {
+            color: #e53e3e;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .view-archive:hover {
+            color: #c53030;
+            text-decoration: underline;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 80px 0 60px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .page-header p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            
+            .glass-card {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+            
+            .glass-card h4 {
+                font-size: 1.2rem;
+            }
+            
+            .glass-card h5 {
+                font-size: 1rem;
+            }
+            
+            .glass-card i {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            
+            .news-tags {
+                gap: 5px;
+            }
+            
+            .tag {
+                padding: 3px 8px;
+                font-size: 0.75rem;
+            }
+            
+            .news-date {
+                padding: 4px 10px;
+                font-size: 0.8rem;
+            }
+            
+            .newsletter-container {
+                padding: 25px 15px;
+            }
+            
+            .newsletter-container h3 {
+                font-size: 1.5rem;
+            }
+            
+            .newsletter-container i {
+                font-size: 2.5rem !important;
+            }
+            
+            .form-group input[type="email"] {
+                width: 100%;
+                margin-bottom: 15px;
+                margin-right: 0;
+                padding: 12px;
+            }
+            
+            .submit-btn {
+                width: 100%;
+                padding: 12px 20px;
+            }
+            
+            .archive-month {
+                padding: 25px 15px;
+            }
+            
+            .archive-month i {
+                font-size: 2rem !important;
+            }
+            
+            .notice-item i {
+                font-size: 2rem !important;
+            }
+        }
+        
+        @media (max-width: 768px) and (min-width: 481px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .glass-card {
+                padding: 25px 20px;
+            }
+            
+            .newsletter-container {
+                padding: 30px 20px;
+            }
+            
+            .form-group input[type="email"] {
+                width: 100%;
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+            
+            .submit-btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .glass-card {
+                padding: 30px 25px;
+            }
+        }
+        
+        /* Grid Responsiveness */
+        @media (max-width: 480px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) and (min-width: 481px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .grid-3 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        
+        /* Container Responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 768px) and (min-width: 481px) {
+            .container {
+                padding: 0 20px;
+            }
+        }
+
+        /* Mobile Navigation Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background: rgba(26, 32, 44, 0.95);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 100px;
+                transition: left 0.3s ease;
+                z-index: 1000;
+            }
+            
+            .nav-links.mobile-active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+                width: 90%;
+            }
+            
+            .nav-links li a {
+                display: block;
+                padding: 15px 20px;
+                font-size: 1.1rem;
+                text-align: center;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links li a:hover {
+                background: rgba(229, 62, 62, 0.2);
+                color: #e53e3e;
+            }
+            
+            .dropdown-content {
+                position: static !important;
+                display: none !important;
+                background: rgba(45, 55, 72, 0.9) !important;
+                box-shadow: none !important;
+                border-radius: 8px !important;
+                margin-top: 10px !important;
+                width: 100% !important;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block !important;
+            }
+            
+            .dropdown-content a {
+                padding: 12px 20px !important;
+                font-size: 1rem !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+            }
+            
+            .dropdown-content a:last-child {
+                border-bottom: none !important;
+            }
+            
+            .mobile-menu {
+                display: block;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+                z-index: 1001;
+                position: relative;
+            }
+            
+            .mobile-menu i {
+                transition: transform 0.3s ease;
+            }
+            
+            .mobile-menu.active i {
+                transform: rotate(90deg);
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .mobile-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="countries/australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="countries/australia/skilled-migration.html" class="dropdown-featured">SKILLED MIGRATION</a>
+                        <a href="countries/australia/student-visa.html">STUDENT VISA</a>
+                        <a href="countries/australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="countries/australia/family-visa.html">FAMILY VISA</a>
+                        <a href="countries/australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="countries/australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="countries/canada/index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="countries/canada/express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="countries/canada/skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="countries/canada/skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="countries/canada/provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="countries/canada/student-visas.html">STUDENT VISAS</a>
+                        <a href="countries/canada/tourist-visas.html">TOURIST VISAS</a>
+                        <a href="countries/canada/family-visas.html">FAMILY VISAS</a>
+                        <a href="countries/canada/investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="countries/new-zealand/index.html" class="dropbtn">NEW ZEALAND</a>
+                    <div class="dropdown-content">
+                        <a href="countries/new-zealand/skilled-migration.html" class="dropdown-featured">SKILLED MIGRATION</a>
+                        <a href="countries/new-zealand/student-visas.html">STUDENT VISAS</a>
+                        <a href="countries/new-zealand/tourist-visas.html">TOURIST VISAS</a>
+                        <a href="countries/new-zealand/family-visas.html">FAMILY VISAS</a>
+                        <a href="countries/new-zealand/investment-migration.html">INVESTMENT MIGRATION</a>
+                    </div>
+                </li>
+                <li><a href="assessment.html">ASSESSMENT</a></li>
+                <li><a href="news.html" class="active">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Immigration News & Updates</h1>
+            <p>Stay informed with the latest immigration policies and opportunities</p>
+        </div>
+    </section>
+
+    <!-- News Content Section -->
+    <section id="news" class="news-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); padding: 60px 0;">
+        <div class="container">
+            <!-- Featured News -->
+            <div class="featured-news">
+                <h2 class="section-title">Featured News</h2>
+                <div class="grid grid-2">
+                    <div class="glass-card featured-article">
+                        <div class="news-date">January 15, 2025</div>
+                        <i class="fas fa-star"></i>
+                        <h4>Canada Announces 2025 Immigration Targets</h4>
+                        <p>Canada has revealed its Immigration Levels Plan for 2025, targeting 485,000 new permanent residents with increased emphasis on French-speaking immigrants and healthcare workers.</p>
+                        <div class="news-tags">
+                            <span class="tag">Canada</span>
+                            <span class="tag">Express Entry</span>
+                            <span class="tag">Policy Update</span>
+                        </div>
+                    </div>
+                    <div class="glass-card featured-article">
+                        <div class="news-date">January 12, 2025</div>
+                        <i class="fas fa-star"></i>
+                        <h4>Australia's New Skilled Occupation List Released</h4>
+                        <p>The updated Medium and Long-term Strategic Skills List (MLTSSL) includes new occupations in healthcare, engineering, and IT sectors, creating more opportunities for skilled migrants.</p>
+                        <div class="news-tags">
+                            <span class="tag">Australia</span>
+                            <span class="tag">Skills Assessment</span>
+                            <span class="tag">SOL Update</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Country-specific News -->
+            <div class="country-news">
+                <h2 class="section-title">Latest Updates by Country</h2>
+                
+                <!-- Australia News -->
+                <div class="news-category">
+                    <h3><i class="fas fa-flag"></i> Australia</h3>
+                    <div class="grid grid-3">
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 10, 2025</div>
+                            <h5>Student Visa Changes Take Effect</h5>
+                            <p>New English language requirements and financial capacity measures for international students are now in place.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 8, 2025</div>
+                            <h5>Regional Migration Boost</h5>
+                            <p>Additional places allocated for Regional Skilled Migration visas to address skills shortages in rural areas.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 5, 2025</div>
+                            <h5>SkillSelect Invitation Round</h5>
+                            <p>Latest round issued 1,500 invitations with minimum points score of 65 for most occupations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canada News -->
+                <div class="news-category">
+                    <h3><i class="fas fa-flag"></i> Canada</h3>
+                    <div class="grid grid-3">
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 9, 2025</div>
+                            <h5>Provincial Program Updates</h5>
+                            <p>Ontario and British Columbia announce new streams for healthcare workers and tech professionals.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 7, 2025</div>
+                            <h5>Express Entry Draw Results</h5>
+                            <p>All-program draw invites 4,500 candidates with CRS score of 496 in the latest selection round.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 4, 2025</div>
+                            <h5>Francophone Immigration</h5>
+                            <p>New initiatives to attract French-speaking immigrants outside Quebec launched by federal government.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Zealand News -->
+                <div class="news-category">
+                    <h3><i class="fas fa-flag"></i> New Zealand</h3>
+                    <div class="grid grid-3">
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 11, 2025</div>
+                            <h5>Green List Expansion</h5>
+                            <p>Additional occupations added to the Green List for fast-track residence pathways in construction and healthcare.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 6, 2025</div>
+                            <h5>Working Holiday Scheme</h5>
+                            <p>Extended agreements with partner countries and increased quota for popular working holiday programs.</p>
+                        </div>
+                        <div class="glass-card news-item">
+                            <div class="news-date">January 3, 2025</div>
+                            <h5>SMC Selection Process</h5>
+                            <p>Skilled Migrant Category continues monthly selections with focus on high-value occupations and regional employment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notices -->
+            <div class="important-notices">
+                <h2 class="section-title">Important Notices</h2>
+                <div class="grid grid-2">
+                    <div class="glass-card notice-item urgent">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Processing Delays Alert</h4>
+                        <p>Due to high application volumes, some visa categories may experience extended processing times. Plan accordingly and apply early.</p>
+                        <div class="notice-date">Updated: January 14, 2025</div>
+                    </div>
+                    <div class="glass-card notice-item info">
+                        <i class="fas fa-info-circle"></i>
+                        <h4>Document Requirements Update</h4>
+                        <p>New biometric requirements and digital document submission processes are being implemented across all countries.</p>
+                        <div class="notice-date">Updated: January 13, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+                <h2 class="section-title">Stay Updated</h2>
+                <div class="glass-card newsletter-container">
+                    <div class="newsletter-content">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <p>Get the latest immigration news, policy updates, and exclusive insights delivered directly to your inbox.</p>
+                        
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="form-group">
+                                <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email address" required>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Subscribe
+                                </button>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to receive email updates and newsletters
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Archive -->
+            <div class="news-archive">
+                <h2 class="section-title">News Archive</h2>
+                <div class="grid grid-4">
+                    <div class="glass-card archive-month">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>December 2024</h5>
+                        <p>15 articles</p>
+                        <a href="#" class="view-archive">View Archive</a>
+                    </div>
+                    <div class="glass-card archive-month">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>November 2024</h5>
+                        <p>22 articles</p>
+                        <a href="#" class="view-archive">View Archive</a>
+                    </div>
+                    <div class="glass-card archive-month">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>October 2024</h5>
+                        <p>18 articles</p>
+                        <a href="#" class="view-archive">View Archive</a>
+                    </div>
+                    <div class="glass-card archive-month">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>September 2024</h5>
+                        <p>20 articles</p>
+                        <a href="#" class="view-archive">View Archive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Static Footer -->
+    <footer class="static-footer">
+        <div class="static-footer-container">
+            <!-- Left Section: Logo and Social -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpg" alt="iGlobal Opportunities">
+                </div>
+                <div class="social-icons-static">
+                    <a href="#" class="social-icon-static facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon-static instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-static twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Section: Contact & MARA -->
+            <div class="footer-center">
+                <div class="contact-location">
+                    <div class="location-header">PHILIPPINES</div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-phone"></i>
+                        <span>(8) 556 6248</span>
+                    </div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-envelope"></i>
+                        <span>intl.legalspecialist@yahoo.com.ph</span>
+                    </div>
+                </div>
+                
+                <div class="mara-badge-static">
+                    <div class="mara-logo-static">MARA</div>
+                    <div class="mara-info-static">
+                        <span class="mara-title-static">Migration Agents<br>Registration Authority</span>
+                        <div class="mara-number-static">1067176</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Links -->
+            <div class="footer-right">
+                <ul class="useful-links-static">
+                    <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">Canada Immigration</a></li>
+                    <li><a href="https://www.immigration.govt.nz/" target="_blank">New Zealand Immigration</a></li>
+                    <li><a href="https://immi.homeaffairs.gov.au/" target="_blank">Australia Home Affairs</a></li>
+                    <li><a href="https://www.cicnews.com/" target="_blank">CIC News</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom-static">
+            <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>

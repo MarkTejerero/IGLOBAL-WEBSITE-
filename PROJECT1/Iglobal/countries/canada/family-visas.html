@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Visas - Canada | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+        
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .hero-text {
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        .family-visa-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .visa-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .visa-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+        
+        .visa-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .visa-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .apply-btn {
+            background: #3182ce;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .apply-btn:hover {
+            background: #2c5aa0;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(49, 130, 206, 0.3);
+        }
+        
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 20px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .family-visa-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .visa-card {
+                padding: 30px 20px;
+            }
+            
+            .visa-card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="../australia/skilled-migration.html" class="dropdown-featured">GENERAL SKILLED MIGRATION</a>
+                        <a href="../australia/student-visa.html">STUDENT VISA</a>
+                        <a href="../australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="../australia/family-visa.html">FAMILY VISA</a>
+                        <a href="../australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="../australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="student-visas.html">STUDENT VISAS</a>
+                        <a href="tourist-visas.html">TOURIST VISAS</a>
+                        <a href="family-visas.html" class="active">FAMILY VISAS</a>
+                        <a href="investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li><a href="../new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Family Visas</h1>
+                <p>Family ties are fundamental to life and it is only natural to want to be near your loved ones. Your family members may be able to sponsor you under the Family Migration program and it would be a matter of time before you are embarking on new adventures together in Canada. Even if you intend to stay temporarily in Canada due to studies or other reasons, you would also need to apply for the relevant visas.</p>
+            </div>
+            
+            <div class="family-visa-grid">
+                <div class="visa-card">
+                    <h2>SPOUSE/PARTNER VISA</h2>
+                    <p>If you wish to visit to Canada, don't hesitate to contact us. We shall provide you with all the assistance to make your dream come true!</p>
+                    <button class="apply-btn" onclick="window.location.href='../../assessment.html'">APPLY NOW</button>
+                </div>
+                
+                <div class="visa-card">
+                    <h2>CHILD MIGRATION</h2>
+                    <p>If you wish to visit to Canada, don't hesitate to contact us. We shall provide you with all the assistance to make your dream come true!</p>
+                    <button class="apply-btn" onclick="window.location.href='../../assessment.html'">APPLY NOW</button>
+                </div>
+                
+                <div class="visa-card">
+                    <h2>PARENT VISA</h2>
+                    <p>If you wish to visit to Canada, don't hesitate to contact us. We shall provide you with all the assistance to make your dream come true!</p>
+                    <button class="apply-btn" onclick="window.location.href='../../assessment.html'">APPLY NOW</button>
+                </div>
+                
+                <div class="visa-card">
+                    <h2>GRANDPARENT VISA</h2>
+                    <p>If you wish to visit to Canada, don't hesitate to contact us. We shall provide you with all the assistance to make your dream come true!</p>
+                    <button class="apply-btn" onclick="window.location.href='../../assessment.html'">APPLY NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

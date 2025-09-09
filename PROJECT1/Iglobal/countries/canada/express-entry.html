@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Entry - Canada | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .express-entry-container {
+                grid-template-columns: 1fr !important;
+                height: auto !important;
+            }
+            
+            .express-entry-info,
+            .general-requirements,
+            .professional-image {
+                min-height: 400px;
+            }
+            
+            .professional-image {
+                order: -1;
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .express-entry-info,
+            .general-requirements {
+                padding: 40px 30px !important;
+            }
+            
+            .express-entry-info h2,
+            .advantages-section h2,
+            .visa-application-process h2 {
+                font-size: 1.5rem !important;
+            }
+            
+            .requirements-header h2 {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .express-entry-main {
+                margin-top: 60px !important;
+            }
+            
+            .express-entry-info,
+            .general-requirements {
+                padding: 30px 20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../australia/index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="../australia/skilled-migration.html" class="dropdown-featured">GENERAL SKILLED MIGRATION</a>
+                        <a href="../australia/student-visa.html">STUDENT VISA</a>
+                        <a href="../australia/tourist-visa.html">TOURIST VISA</a>
+                        <a href="../australia/family-visa.html">FAMILY VISA</a>
+                        <a href="../australia/business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="../australia/other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="express-entry.html" class="dropdown-featured active">EXPRESS ENTRY</a>
+                        <a href="skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="student-visas.html">STUDENT VISAS</a>
+                        <a href="tourist-visas.html">TOURIST VISAS</a>
+                        <a href="family-visas.html">FAMILY VISAS</a>
+                        <a href="investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li><a href="../new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Main Content Section with Three Column Layout -->
+    <section class="express-entry-main" style="background: #f8fafc; padding: 0; margin-top: 80px;">
+        <div class="express-entry-container" style="display: grid; grid-template-columns: 1fr 1fr 1fr; height: 100vh; max-width: none; margin: 0;">
+            
+            <!-- Left Section: Express Entry Info -->
+            <div class="express-entry-info" style="padding: 60px 40px; background: white; display: flex; flex-direction: column; justify-content: flex-start;">
+                <h2 style="font-size: 2rem; font-weight: 300; margin-bottom: 30px; color: #2d3748;">The Express Entry</h2>
+                <p style="font-size: 1rem; line-height: 1.7; color: #4a5568; margin-bottom: 25px;">
+                    The <strong>Express Entry</strong> program is designed to allow skilled workers from around the world to apply for immigration to Canada. Skilled immigrants are chosen as permanent residents based on their ability to settle in Canada and contribute to the growth of the economy.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.7; color: #4a5568; margin-bottom: 25px;">
+                    Using a point system, an applicant is assessed under the federal skilled worker class according to various factors that will indicate whether there is a strong likelihood that the applicant and dependants will successfully establish in Canada. Ideal applicants under this class are persons who have been working in managerial, professional or technical occupations "open" to prospective immigrants to Canada. The selection rules particularly favor applicants with government approved job offers in Canada.
+                </p>
+            </div>
+
+            <!-- Middle Section: General Requirements -->
+            <div class="general-requirements" style="padding: 60px 40px; background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%); color: white; display: flex; flex-direction: column; justify-content: flex-start;">
+                <div class="requirements-header" style="text-align: center; margin-bottom: 40px; padding: 20px; background: rgba(255,255,255,0.15); border-radius: 8px; border: 2px solid rgba(255,255,255,0.2);">
+                    <h2 style="margin: 0; font-size: 1.4rem; font-weight: 700; letter-spacing: 2px; color: white;">GENERAL REQUIREMENTS</h2>
+                </div>
+                
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.6;">
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Have at least one year of continuous full-time or equivalent part-time work experience
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Classified at skill levels A, B or O  
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Skilled work experience and a full-time permanent employment opportunity
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Arranged employment (if you don't already have it arranged) approved by HRSDC
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Have completed a PhD in Canada, or have substantial experience in Canada
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Substantial amounts of study in Canada
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Have at least one year of experience in Canada
+                    </li>
+                    <li style="margin-bottom: 12px; padding-left: 15px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fbb6ce;">•</span>
+                        Pass a minimum functional level of language ability for one of Canada's two official languages (English or French)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Section: Professional Image -->
+            <div class="professional-image" style="background: url('../../assets/canada-img1.jpg'); background-size: cover; background-position: center;">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages-section" style="background: #f8fafc; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: #2d3748; text-transform: uppercase; letter-spacing: 2px; font-weight: 300;">ADVANTAGES</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul style="list-style: none; padding: 0; font-size: 1rem; line-height: 2; color: #4a5568;">
+                    <li style="margin-bottom: 8px;">✓ Free primary and secondary education in and subsidized tertiary education</li>
+                    <li style="margin-bottom: 8px;">✓ Healthcare benefits</li>
+                    <li style="margin-bottom: 8px;">✓ Relatively easy requirements due to a wider array of eligible occupations</li>
+                    <li style="margin-bottom: 8px;">✓ Ease of travel to the United States of America</li>
+                    <li style="margin-bottom: 8px;">✓ Pathway to Canadian citizenship</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Immigration Process Section -->
+    <section class="process-steps" style="background: #f8fafc; padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 40px; color: #2d3748; text-transform: uppercase; letter-spacing: 2px; font-weight: 300; text-align: center;">Our Immigration Process</h2>
+            <div class="process-timeline">
+                <!-- Progress Line -->
+                <div class="progress-line">
+                    <div class="progress-fill"></div>
+                </div>
+                
+                <div class="process-step" data-step="1">
+                    <div class="step-circle">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Initial Assessment</h3>
+                        <p>Free consultation to evaluate your eligibility and understand your immigration goals across different visa categories.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-circle">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Strategy Planning</h3>
+                        <p>Create a customized immigration roadmap with clear timelines and strategic steps to achieve your goals.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-circle">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Timeline Development</h3>
+                        <p>Establish realistic milestones and deadlines to keep your application process on track and efficient.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-circle">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Expression of Interest</h3>
+                        <p>Submit EOI for skill-based programs and position yourself competitively in the immigration pool.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="5">
+                    <div class="step-circle">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Visa Application</h3>
+                        <p>Complete and submit your comprehensive visa application with all required documentation.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="6">
+                    <div class="step-circle">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>State Nomination</h3>
+                        <p>Secure state or provincial nomination if required for your specific visa pathway (when applicable).</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="7">
+                    <div class="step-circle">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Travel Authorization</h3>
+                        <p>Obtain electronic travel authorization and prepare for your journey to your new destination.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="8">
+                    <div class="step-circle">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Medical & Police Clearance</h3>
+                        <p>Complete required health examinations and obtain police clearance certificates from relevant countries.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="9">
+                    <div class="step-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Visa Approval</h3>
+                        <p>Receive your residence or provisional visa approval and prepare for your new life abroad.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="10">
+                    <div class="step-circle">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>Settlement Support</h3>
+                        <p>Receive ongoing guidance for your successful settlement and integration into your new country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Static Footer -->
+    <footer class="static-footer">
+        <div class="static-footer-container">
+            <!-- Left Section: Logo and Social -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../assets/logo.jpg" alt="iGlobal Opportunities">
+                </div>
+                <div class="social-icons-static">
+                    <a href="#" class="social-icon-static facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon-static instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-static twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Section: Contact & MARA -->
+            <div class="footer-center">
+                <div class="contact-location">
+                    <div class="location-header">PHILIPPINES</div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-phone"></i>
+                        <span>(8) 556 6248</span>
+                    </div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-envelope"></i>
+                        <span>intl.legalspecialist@yahoo.com.ph</span>
+                    </div>
+                </div>
+                
+                <div class="mara-badge-static">
+                    <div class="mara-logo-static">MARA</div>
+                    <div class="mara-info-static">
+                        <span class="mara-title-static">Migration Agents<br>Registration Authority</span>
+                        <div class="mara-number-static">1067176</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Links -->
+            <div class="footer-right">
+                <ul class="useful-links-static">
+                    <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">Canada Immigration</a></li>
+                    <li><a href="https://www.immigration.govt.nz/" target="_blank">New Zealand Immigration</a></li>
+                    <li><a href="https://immi.homeaffairs.gov.au/" target="_blank">Australia Home Affairs</a></li>
+                    <li><a href="https://www.cicnews.com/" target="_blank">CIC News</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom-static">
+            <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    
+    <!-- Process Steps Animation Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Process Steps Animation
+        const processSteps = document.querySelectorAll('.process-step');
+        const progressFill = document.querySelector('.progress-fill');
+        let animatedSteps = [];
+
+        function animateProcessSteps() {
+            processSteps.forEach((step, index) => {
+                const rect = step.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                if (rect.top <= windowHeight * 0.95 && !animatedSteps.includes(index)) {
+                    setTimeout(() => {
+                        step.classList.add('animate');
+                        animatedSteps.push(index);
+                    }, index * 200); // Stagger animation by 200ms
+                }
+            });
+
+            // Update progress line
+            const totalSteps = processSteps.length;
+            const animatedCount = animatedSteps.length;
+            
+            // Calculate progress percentage based on actual animated steps
+            const progressPercentage = animatedCount > 0 ? ((animatedCount - 1) / (totalSteps - 1)) * 100 : 0;
+            
+            if (progressFill) {
+                progressFill.style.height = Math.min(progressPercentage, 100) + '%';
+            }
+        }
+
+        // Enhanced hover effects for process steps
+        processSteps.forEach((step, index) => {
+            step.addEventListener('mouseenter', function() {
+                const circle = this.querySelector('.step-circle');
+                const content = this.querySelector('.step-content');
+                
+                // Add pulse effect to circle
+                circle.style.animation = 'pulse 0.6s ease-in-out';
+                
+                // Add subtle glow effect
+                content.style.boxShadow = '0 20px 50px rgba(197, 43, 63, 0.2)';
+            });
+
+            step.addEventListener('mouseleave', function() {
+                const circle = this.querySelector('.step-circle');
+                const content = this.querySelector('.step-content');
+                
+                // Remove pulse effect
+                circle.style.animation = '';
+                
+                // Reset shadow
+                content.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Initial check
+        animateProcessSteps();
+
+        // Listen for scroll events
+        window.addEventListener('scroll', animateProcessSteps);
+        
+        // CSS keyframes for pulse animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.15); }
+                100% { transform: scale(1.1); }
+            }
+        `;
+        document.head.appendChild(style);
+    });
+    </script>
+</body>
+</html>

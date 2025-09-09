@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services - iGlobal Opportunities</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#C52B3F',
+                        'brand-red-light': '#D84D5D',
+                        'brand-gray': '#333333'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS (for legacy compatibility) -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="documentation.html" class="active">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li><a href="../countries/australia/index.html">AUSTRALIA</a></li>
+                <li><a href="../countries/canada/index.html">CANADA</a></li>
+                <li><a href="../countries/new-zealand/index.html">NEW ZEALAND</a></li>
+                <li><a href="../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="padding: 120px 0; background: linear-gradient(135deg, var(--neon-green) 0%, var(--neon-green-dim) 100%); position: relative; overflow: hidden;">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/20 to-transparent"></div>
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
+            <div class="absolute bottom-20 right-20 w-48 h-48 bg-white/10 rounded-full blur-xl"></div>
+            <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+        </div>
+        
+        <div class="container relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Main Title -->
+                <h1 id="services-title" class="font-montserrat font-black text-white mb-6" 
+                    style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 0.9; letter-spacing: -0.02em; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                    <span class="inline-block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">PROFESSIONAL</span>
+                    <span class="inline-block ml-4 bg-gradient-to-r from-white to-gray-100 bg-clip-text text-transparent" 
+                          data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">SERVICES</span>
+                </h1>
+                
+                <!-- Decorative Line -->
+                <div class="flex justify-center mb-8" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                    <div class="h-1 bg-gradient-to-r from-transparent via-white to-transparent rounded-full" 
+                         style="width: clamp(150px, 30vw, 400px);"></div>
+                </div>
+                
+                <!-- Subtitle -->
+                <p class="font-montserrat font-semibold text-white/95 leading-relaxed mb-4" 
+                   data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"
+                   style="font-size: clamp(1.25rem, 3vw, 1.8rem); max-width: 600px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                    Be met with endless overseas opportunities with <span class="font-bold text-yellow-100">IGlobal</span>
+                </p>
+                
+                <!-- Description -->
+                <p class="font-montserrat font-medium text-white/90 leading-relaxed" 
+                   data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000"
+                   style="font-size: clamp(0.9rem, 2vw, 1.1rem); max-width: 800px; margin: 0 auto; text-shadow: 0 1px 5px rgba(0,0,0,0.2);">
+                    IGlobal Opportunities offers a wide array of programs, including university and immigration placements, 
+                    set in different countries all over the world. This is to give you endless options and 
+                    insurmountable opportunities to achieve your lifelong dreams overseas.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 left-8 text-white/40 text-6xl" data-aos="fade-in" data-aos-delay="1200" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-file-alt floating-icon"></i>
+        </div>
+        <div class="absolute bottom-1/3 right-12 text-white/40 text-5xl" data-aos="fade-in" data-aos-delay="1400" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-certificate floating-icon"></i>
+        </div>
+        <div class="absolute top-2/3 left-16 text-white/40 text-4xl" data-aos="fade-in" data-aos-delay="1600" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-balance-scale floating-icon"></i>
+        </div>
+        <div class="absolute top-1/2 right-8 text-white/40 text-5xl" data-aos="fade-in" data-aos-delay="1800" style="text-shadow: 0 0 20px rgba(255,255,255,0.5);">
+            <i class="fas fa-handshake floating-icon"></i>
+        </div>
+    </section>
+
+    <!-- Professional Services Section -->
+    <section id="professional-services" class="programs-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%); padding: 60px 0;">
+        <div class="container">
+            <!-- First Row - 4 Services -->
+            <div class="programs-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                
+                <!-- Confidential One-on-One Direct Consultation -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);">
+                        <i class="fas fa-user-friends" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Confidential One-on-One Direct Consultation</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            Our immigration lawyers / specialists have consulted in the USA, Canada, Australia or New Zealand are to be able to know your process of immigrating.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Document Based Assessment -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #10B981 0%, #047857 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);">
+                        <i class="fas fa-clipboard-check" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Document Based Assessment</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            A very rigid assessment of your qualifications in case you cannot attend or find it seminars or unable to visit our office for One-on-One consultation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Thorough Review and Appeal of Denied Case -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);">
+                        <i class="fas fa-search" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Thorough Review and Appeal of Denied Case</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            We review your denied cases and give you appropriate advise to turn your case to a successful one.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visa Application Processing -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);">
+                        <i class="fas fa-cogs" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Visa Application Processing</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            With vast experience and deep knowledge of how the immigration system works, we find the best solutions to even the most complicated problems of our clients related to immigration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row - 4 Services -->
+            <div class="programs-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                
+                <!-- Pre-Settlement and Landing Advice -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);">
+                        <i class="fas fa-plane-departure" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Pre-Settlement and Landing Advice</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            IGlobal provides pre-landing orientation to students, eligible immigrants and their spouses and dependents during their final stage of immigration process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Settlement and Integration Assistance Upon Landing -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);">
+                        <i class="fas fa-plane-arrival" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Settlement and Integration Assistance Upon Landing</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            IGlobal provides a range of initial settlement services to our clients that include airport pick up and arranging accommodation, besides helping to open a bank account and apply for necessary documents such as Permanent Residence card, Health Card etc.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Legal Advice on All Immigration Matters -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);">
+                        <i class="fas fa-balance-scale" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Legal Advice on All Immigration Matters</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            A legal resident planning to marry a foreigner in the resident's country will need this visa to enter the country, get married there, and pursue permanent residency. You must get married within 90 days of your fiancé's arrival in the country.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Assistance and Proper Administration of Documents -->
+                <div class="program-card glass-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="program-icon" style="background: linear-gradient(135deg, #84CC16 0%, #65A30D 100%); color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(132, 204, 22, 0.3);">
+                        <i class="fas fa-folder-open" style="font-size: 2rem;"></i>
+                    </div>
+                    <div class="program-content text-center">
+                        <h3 style="color: var(--neon-green); font-weight: bold; margin-bottom: 1rem; font-size: 1.1rem;">Assistance and Proper Administration of Documents</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+                            Documents such as travel documents & police clearances would require security check requirements to facilitate processing of your case.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apply Now Button -->
+            <div class="text-center" data-aos="fade-up" data-aos-delay="900">
+                <a href="../assessment.html" class="inline-flex items-center px-12 py-4 bg-gradient-to-r from-brand-red to-brand-red-light text-white font-montserrat font-bold text-lg rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <span>APPLY NOW</span>
+                    <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- GSAP for Premium Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../script.js"></script>
+    
+    <!-- GSAP Premium Animations -->
+    <script>
+        // Register ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Enhanced Title Animation with GSAP - Both words slide up
+            const titleSpans = document.querySelectorAll('#services-title span');
+            
+            // Create a timeline for the title animation
+            const titleTl = gsap.timeline({ delay: 0.5 });
+            
+            // Animate both words with the same sliding up effect
+            titleTl.fromTo(titleSpans, {
+                y: 80,
+                opacity: 0,
+                scale: 0.8
+            }, {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                stagger: 0.2
+            });
+            
+            // Add a subtle floating animation to the title
+            gsap.to('#services-title', {
+                y: -10,
+                duration: 3,
+                ease: "power2.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            
+            // Animate decorative elements with stagger
+            gsap.fromTo('.floating-icon', {
+                scale: 0,
+                rotation: 180,
+                opacity: 0
+            }, {
+                scale: 1,
+                rotation: 0,
+                opacity: 0.6,
+                duration: 1.5,
+                stagger: 0.3,
+                ease: "back.out(1.7)",
+                delay: 2
+            });
+            
+            // Enhanced floating effect for decorative icons
+            gsap.to('.floating-icon', {
+                y: -15,
+                scale: 1.1,
+                duration: 3,
+                ease: "power2.inOut",
+                yoyo: true,
+                repeat: -1,
+                stagger: 0.5,
+                delay: 3
+            });
+            
+            // Rotation animation for some icons
+            gsap.to('.floating-icon:nth-child(odd)', {
+                rotation: 360,
+                duration: 20,
+                ease: "none",
+                repeat: -1,
+                delay: 4
+            });
+            
+            // Enhanced program card interactions
+            document.querySelectorAll('.program-card').forEach((card, index) => {
+                const icon = card.querySelector('.program-icon');
+                
+                // Hover animations
+                card.addEventListener('mouseenter', () => {
+                    gsap.to(card, {
+                        duration: 0.4,
+                        scale: 1.02,
+                        y: -8,
+                        ease: "power2.out"
+                    });
+                    gsap.to(icon, {
+                        duration: 0.3,
+                        scale: 1.15,
+                        rotation: 5,
+                        ease: "power2.out"
+                    });
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    gsap.to(card, {
+                        duration: 0.4,
+                        scale: 1,
+                        y: 0,
+                        ease: "power2.out"
+                    });
+                    gsap.to(icon, {
+                        duration: 0.3,
+                        scale: 1,
+                        rotation: 0,
+                        ease: "power2.out"
+                    });
+                });
+            });
+            
+            // Staggered entrance animation for programs grid
+            gsap.fromTo(".program-card", {
+                y: 60,
+                opacity: 0,
+                scale: 0.8
+            }, {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".programs-grid",
+                    start: "top 75%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+    </script>
+</body>
+</html>

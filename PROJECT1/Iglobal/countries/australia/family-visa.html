@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Visa - Australia | iGlobal Opportunities</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Hero Section */
+        .family-hero {
+            height: 80vh;
+            background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../../assets/australia-img6.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .family-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Family Info Section */
+        .family-info {
+            background: #f8fafc;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .family-info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a5568;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Family Visa Cards Grid */
+        .family-visas-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .family-visas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .family-visa-card {
+            background: linear-gradient(135deg, #C52B3F 0%, #D84D5D 100%);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .family-visa-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .family-visa-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+            line-height: 1.3;
+        }
+
+        .family-visa-card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.9;
+            margin: 0;
+            color: white;
+        }
+
+        .family-visa-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .family-visa-card li {
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            opacity: 0.8;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .family-visa-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #cbd5e0;
+        }
+
+        /* Second Row Cards - Different Styling */
+        .family-visa-card.row-2 {
+            background: linear-gradient(135deg, #D84D5D 0%, #e91e63 100%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .family-visas-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .family-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .family-visas-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .family-visa-card {
+                padding: 30px 20px;
+                min-height: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .family-visas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="background-shape"></div>
+
+    <!-- Navigation with Image Logo -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo Image -->
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.jpg" alt="iGlobal Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="../../about/index.html" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="../../about/who-we-are.html" class="dropdown-featured">WHO WE ARE</a>
+                        <a href="../../about/why-choose-us.html">WHY GO WITH IGLOBAL</a>
+                        <a href="../../about/what-we-offer.html">WHAT WE OFFER TO DO</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../../services/index.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown-content">
+                        <a href="../../services/consultation.html" class="dropdown-featured">MIGRATION AND VISA SERVICES</a>
+                        <a href="../../services/documentation.html">PROFESSIONAL SERVICES</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html" class="dropbtn">AUSTRALIA</a>
+                    <div class="dropdown-content">
+                        <a href="skilled-migration.html" class="dropdown-featured">SKILLED MIGRATION</a>
+                        <a href="student-visa.html">STUDENT VISA</a>
+                        <a href="tourist-visa.html">TOURIST VISA</a>
+                        <a href="family-visa.html" class="active">FAMILY VISA</a>
+                        <a href="business-investment.html">BUSINESS AND INVESTMENT VISAS</a>
+                        <a href="other-visas.html">OTHER VISAS</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../canada/index.html" class="dropbtn">CANADA</a>
+                    <div class="dropdown-content">
+                        <a href="../canada/express-entry.html" class="dropdown-featured">EXPRESS ENTRY</a>
+                        <a href="../canada/skilled-worker.html">FEDERAL SKILLED WORKER</a>
+                        <a href="../canada/skilled-trades.html">FEDERAL SKILLED TRADES</a>
+                        <a href="../canada/provincial-nomination.html">PROVINCIAL NOMINATION</a>
+                        <a href="../canada/student-visas.html">STUDENT VISAS</a>
+                        <a href="../canada/tourist-visas.html">TOURIST VISAS</a>
+                        <a href="../canada/family-visas.html">FAMILY VISAS</a>
+                        <a href="../canada/investor-entrepreneur.html">INVESTOR AND ENTREPRENEUR</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../new-zealand/index.html" class="dropbtn">NEW ZEALAND</a>
+                    <div class="dropdown-content">
+                        <a href="../new-zealand/skilled-migration.html" class="dropdown-featured">SKILLED MIGRATION</a>
+                        <a href="../new-zealand/student-visas.html">STUDENT VISAS</a>
+                        <a href="../new-zealand/tourist-visas.html">TOURIST VISAS</a>
+                        <a href="../new-zealand/family-visas.html">FAMILY VISAS</a>
+                        <a href="../new-zealand/investment-migration.html">INVESTMENT MIGRATION</a>
+                    </div>
+                </li>
+                <li><a href="../../assessment.html">ASSESSMENT</a></li>
+                <li><a href="../../news.html">NEWS</a></li>
+            </ul>
+
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="family-hero">
+        <div class="container">
+            <h1>Be open to new experiences.</h1>
+        </div>
+    </section>
+
+    <!-- Family Info Section -->
+    <section class="family-info">
+        <div class="container">
+            <p>After settling down in your new home, the next important step would be to have your loved ones with you. IGLOBAL assists with a host of family visa options. If there are any not mentioned that you would like to find out more about, please feel free to contact us.</p>
+        </div>
+    </section>
+
+    <!-- Family Visa Cards Grid -->
+    <section class="family-visas-section">
+        <div class="family-visas-grid">
+            <!-- Row 1 -->
+            <div class="family-visa-card">
+                <h3>Spouse/Partner Visa</h3>
+                <p>An Australian citizen or Australian permanent resident can sponsor their partner if they are legally married or in a de facto marriage for at least 12 months</p>
+            </div>
+            
+            <div class="family-visa-card">
+                <h3>Prospective Marriage Visa</h3>
+                <p>An Australian Citizen, Australian permanent resident or eligible New Zealand citizen in Australia can sponsor their overseas-based fiancé/fiancée for a Prospective Marriage Visa. This visa allows for temporary residence in Australia for up to 9 months during which the marriage should take place</p>
+            </div>
+            
+            <div class="family-visa-card">
+                <h3>Parent Visa</h3>
+                <p>Parents who wish to join their children in Australia may migrate there permanently if they meet the Parent Visa requirements</p>
+                <ul>
+                    <li>The child must be an Australian citizen, Australian permanent resident, or eligible New Zealand citizen settled in Australia</li>
+                    <li>At least half of the children must be living permanently in Australia than in any single country</li>
+                </ul>
+            </div>
+            
+            <div class="family-visa-card">
+                <h3>Parents' Tourist Visa</h3>
+                <p>Parents of Australian citizens and permanent residents who have applied for a parent visa outside Australia and are waiting in that queue can also apply for a tourist visa to enable them to visit their family in Australia</p>
+                <ul>
+                    <li>This visa allows parents to visit and stay in Australia for a tourist visa or up to three years with a 12-month stay on each entry</li>
+                </ul>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="family-visa-card row-2">
+                <h3>Parents' Temporary Visa</h3>
+                <p>Australian citizens and permanent residents will be able to sponsor their biological, adoptive and step-parents to visit and stay in Australia for up to 5 years</p>
+            </div>
+            
+            <div class="family-visa-card row-2">
+                <h3>Child Migration Visa</h3>
+                <p>Children who wish to join their parents in Australia may migrate there permanently if their parent is an Australian citizen, Australian permanent resident or an eligible New Zealand citizen</p>
+            </div>
+            
+            <div class="family-visa-card row-2">
+                <h3>Aged Dependent Visa</h3>
+                <p>Aged persons who rely on a relative in Australia for most of their living costs may migrate to Australia to live with the relative</p>
+            </div>
+            
+            <div class="family-visa-card row-2">
+                <h3>Carer Visa</h3>
+                <p>Individuals willing and able to provide substantial, continuing assistance to an Australian relative who has a medical condition may migrate there under the carer visa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Static Footer -->
+    <footer class="static-footer">
+        <div class="static-footer-container">
+            <!-- Left Section: Logo and Social -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../assets/logo.jpg" alt="iGlobal Opportunities">
+                </div>
+                <div class="social-icons-static">
+                    <a href="#" class="social-icon-static facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon-static instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon-static twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Center Section: Contact & MARA -->
+            <div class="footer-center">
+                <div class="contact-location">
+                    <div class="location-header">PHILIPPINES</div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-phone"></i>
+                        <span>(8) 556 6248</span>
+                    </div>
+                    <div class="contact-item-static">
+                        <i class="fas fa-envelope"></i>
+                        <span>intl.legalspecialist@yahoo.com.ph</span>
+                    </div>
+                </div>
+                
+                <div class="mara-badge-static">
+                    <div class="mara-logo-static">MARA</div>
+                    <div class="mara-info-static">
+                        <span class="mara-title-static">Migration Agents<br>Registration Authority</span>
+                        <div class="mara-number-static">1067176</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Links -->
+            <div class="footer-right">
+                <ul class="useful-links-static">
+                    <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank">Canada Immigration</a></li>
+                    <li><a href="https://www.immigration.govt.nz/" target="_blank">New Zealand Immigration</a></li>
+                    <li><a href="https://immi.homeaffairs.gov.au/" target="_blank">Australia Home Affairs</a></li>
+                    <li><a href="https://www.cicnews.com/" target="_blank">CIC News</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar -->
+        <div class="footer-bottom-static">
+            <p>&copy; 2025 iGlobal Opportunities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
